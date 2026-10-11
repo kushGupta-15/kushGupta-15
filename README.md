@@ -22,14 +22,8 @@ Resend, Zod handles input validation, and Arcjet blocks bots at the edge.
 `Next.js` `TypeScript` `Prisma` `PostgreSQL` `NextAuth` `Stripe` `Inngest`
 
 **[SketchBattle](https://github.com/kushGupta-15/sketchbattle)**
-A Skribbl.io-style drawing and guessing game, built for real-time chaos.
-Socket.IO keeps everyone's canvas in sync on an HTML5 Canvas layer, and
-the game logic handles timed rounds, rank-weighted scoring, and gradual
-word-hint reveals. Rooms can be password-protected, and if someone's
-connection drops mid-round, they can rejoin without losing their place.
-There's also peer-to-peer video chat running alongside the game socket,
-with JWT securing both the REST endpoints and the Socket.IO handshake.
-`React` `TypeScript` `Node.js` `Express` `Socket.IO` `MongoDB`
+A Skribbl.io-style real-time drawing and guessing game, engineered for multiplayer fun and chaos. Features an interactive HTML5 Canvas with custom 4-way BFS flood fill, stroke undo history, and mid-round canvas sync so reconnecting players never lose their place or scores. The game engine powers custom room settings, difficulty tiers, speed-tiered rank scoring, Levenshtein distance near-miss typo alerts, and progressive letter hint reveals. Includes a zero-dependency Web Audio API sound synthesizer, peer-to-peer WebRTC video calling, a mobile-first responsive design with direct on-screen chat guessing, and full security hardening with bcrypt password hashing, sliding-window rate limiting, and 24-hour MongoDB TTL cleanup. Fully verified with a 15-test automated suite and automated GitHub Actions CI.
+`React` `TypeScript` `Node.js` `Express` `Socket.IO` `WebRTC` `MongoDB` `Tailwind CSS` `GitHub Actions`
 
 **[Streamify](https://github.com/kushGupta-15/streamify)**
 A language-exchange platform for people to find practice partners and talk
