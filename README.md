@@ -11,15 +11,8 @@ international events).
 ### Things I've built
 
 **[Career-wave](https://github.com/kushGupta-15/career-wave)**
-A job portal for companies and job seekers. Posting, searching, saving,
-applying, the works. I skipped a separate API layer and built it entirely
-on Next.js Server Actions. Data lives in PostgreSQL through Prisma, with
-Google/GitHub login via NextAuth splitting users into company vs. seeker
-flows. Paid postings go through Stripe (webhooks handle activation), and
-Inngest quietly expires listings on schedule so I didn't need to run a
-cron job for it. File uploads go through UploadThing, emails through
-Resend, Zod handles input validation, and Arcjet blocks bots at the edge.
-`Next.js` `TypeScript` `Prisma` `PostgreSQL` `NextAuth` `Stripe` `Inngest`
+An AI-powered job board and recruiter ATS platform connecting hiring companies with job seekers. I skipped a separate REST API layer and built it end-to-end on Next.js 15 Server Actions and React Server Components. Data lives in Neon PostgreSQL via Prisma, with Google/GitHub login via NextAuth splitting users into recruiter vs. candidate workflows. Integrated Google Gemini 3.8 Flash to run real-time ATS resume compatibility analysis and live career search assistance. Employers publish tiered listings through Stripe Checkout (webhooks handle async activation), and Inngest serverless event workers quietly expire postings on schedule so I didn't need a cron job. Built a recruiter pipeline dashboard with in-browser PDF resume previews and candidate application withdrawal, backed by UploadThing file uploads, Resend transactional emails, Zod validation, and Arcjet edge bot shielding.
+`Next.js 15` `TypeScript` `PostgreSQL` `Prisma` `Google Gemini` `Stripe` `Inngest` `Arcjet`
 
 **[SketchBattle](https://github.com/kushGupta-15/sketchbattle)**
 A Skribbl.io-style real-time drawing and guessing game, engineered for multiplayer fun and chaos. Features an interactive HTML5 Canvas with custom 4-way BFS flood fill, stroke undo history, and mid-round canvas sync so reconnecting players never lose their place or scores. The game engine powers custom room settings, difficulty tiers, speed-tiered rank scoring, Levenshtein distance near-miss typo alerts, and progressive letter hint reveals. Includes a zero-dependency Web Audio API sound synthesizer, peer-to-peer WebRTC video calling, a mobile-first responsive design with direct on-screen chat guessing, and full security hardening with bcrypt password hashing, sliding-window rate limiting, and 24-hour MongoDB TTL cleanup. Fully verified with a 15-test automated suite and automated GitHub Actions CI.
